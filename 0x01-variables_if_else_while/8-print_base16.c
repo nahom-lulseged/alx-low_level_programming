@@ -1,26 +1,20 @@
 #include <stdio.h>
 /**
  * main - Entry point
- *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	char c;
 	int d;
+	char low;
 
-	c = 'a';
-	d = 0;
-	while
-		(d < 10) {
-			putchar(d + '0');
-			d++;
-		}
-	while
-		(c <= 'f') {
-			putchar(c);
-			c++;
-		}
+	for (d = '0'; d <= '9'; d++)
+		putchar(d);
+
+	for (low = 'a'; low <= 'f'; low++)
+		putchar(low);
 	putchar('\n');
+
 	return (0);
 }
